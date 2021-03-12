@@ -1,38 +1,94 @@
-.App {
+body{
+  background-color: #f7f7f7;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 35%;
+  margin: 0 auto;
+
+}
+.main-box{
+  margin: 20px 40px 40px;
+}
+.balance{
+  margin:15px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.balance h2{
+  font-size: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.line-seperator{
+  border: 1px solid skyblue;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.income-expense-box{
+  background-color: white;
+  box-shadow: 0 0 10px gainsboro;
+  padding: 10px 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+
+
+}
+.main-history{
+  margin-top: 10px;
+}
+.main-history h3{
+
+  padding: 10px 0px;
+}
+.main-history ul > li{
+  display: flex;
+  list-style: none  ;
+  justify-content: space-between;
+  padding: 5px 25px;
+  margin: 10px 0px;
+  position: relative;
+ }
+ .main-history ul > li p{
+font-size: 22px;
+font-weight: 600;
+ }
+ .form h2{
+  margin: 10px 0px;
+ }
+.form form label input {
+  width: 95%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 8px 0px;
+  /* border: green; */
+  border: 1px solid deepskyblue;
+}
+.btn{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: deepskyblue;
   color: white;
+  border: none;
+  border-radius: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.btn:hover{
+  cursor: pointer;
+  box-shadow: 0 0 10px skyblue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-center {
+  text-align: center;
+}
+.delet-btn{
+  padding: 5px 8px;
+  position: absolute;
+  right: -7px;
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  top: -8px;
+}
+.delet-btn:hover{
+  cursor: pointer;
+  box-shadow: 0 0 5px rgb(255, 114, 114);
 }
