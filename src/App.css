@@ -92,3 +92,37 @@ font-weight: 600;
   cursor: pointer;
   box-shadow: 0 0 5px rgb(255, 114, 114);
 }
+
+@media (max-width:768px){
+  .container{
+  width: 70%;
+  }
+}
+@media (max-width:414px){
+  .container{
+  width: 90%;
+  }
+  header h1{
+    font-size: 22px;
+  }
+}
+@media (max-width:320px){
+  .container{
+  width: 100%;
+  }
+  header h1{
+    font-size: 22px;
+  }
+}
+
+@media (max-width:280px){
+  .container{
+  width: 100%;
+  }
+  header h1{
+    font-size: 18npx;
+  }
+  .main-box {
+    margin: 20px 20px 40px;
+  }
+}
