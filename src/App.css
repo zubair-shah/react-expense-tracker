@@ -6,8 +6,9 @@ body{
   margin: 0;
   padding: 0;
 }
-.container{
-  width: 35%;
+.container-main{
+  
+  width: 45%;
   margin: 0 auto;
 
 }
@@ -40,8 +41,13 @@ body{
 
   padding: 10px 0px;
 }
+.main-history ul{
+  padding-left: 0px;
+}
+
 .main-history ul > li{
   display: flex;
+  overflow-wrap: anywhere;
   list-style: none  ;
   justify-content: space-between;
   padding: 5px 25px;
@@ -55,8 +61,11 @@ font-weight: 600;
  .form h2{
   margin: 10px 0px;
  }
+ .form form label{
+   display: block;
+ }
 .form form label input {
-  width: 95%;
+  width: 100%;
   border-radius: 5px;
   padding: 10px;
   margin: 8px 0px;
@@ -80,13 +89,14 @@ font-weight: 600;
   text-align: center;
 }
 .delet-btn{
-  padding: 5px 8px;
+  /* padding: 5px 8px; */
   position: absolute;
   right: -7px;
-  background-color: red;
-  border: none;
-  border-radius: 20px;
   top: -8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10% !important;
+  padding: 2px !important;
 }
 .delet-btn:hover{
   cursor: pointer;

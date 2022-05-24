@@ -1,5 +1,7 @@
 import React, {useContext} from 'react';
 import {GlobalContext} from './context/GlobalState'
+import Button from 'react-bootstrap/Button'
+
 
 export const  Transaction = ({ transaction }) => {
 const {  delTransaction } = useContext(GlobalContext);
@@ -11,6 +13,6 @@ const {  delTransaction } = useContext(GlobalContext);
         <li 
          className="income-expense-box">
               <h2>{transaction.description}</h2> <p className="money plus">{sign}${Math.abs(transaction.transactionAmount)}</p>
-               <button className="delet-btn" onClick={() => delTransaction(transaction.id)}>X</button></li>
+               <Button className="delet-btn" variant="danger" onClick={() => delTransaction(transaction.id)}>X</Button></li>
     )
 }

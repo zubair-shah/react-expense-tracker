@@ -1,4 +1,6 @@
 import React, {useState , useContext } from 'react';
+import Button from  'react-bootstrap/Button'
+
 
 import { GlobalContext } from  "./context/GlobalState"
 
@@ -38,8 +40,8 @@ export const AddTransaction = () =>{
                                  onChange={(e) => setTransactionAmount(e.target.value)} />
                     </label>
             
-                  <button className="btn"> Add Transaction</button>
-                
+                  {/* <button className="btn"> Add Transaction</button> */}
+                  <Button type="submit" variant="primary" className="btn"> Add Transaction </Button>
                  
                 </form>
             </div>

@@ -16,7 +16,7 @@ function App() {
 <GlobalProvider>
     
             <Header />
-    <div className="container">
+    <div className="container-main">
       <div className="main-box">
       <Balance />
       <AccountSummary />
